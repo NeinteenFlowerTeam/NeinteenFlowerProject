@@ -1,0 +1,92 @@
+﻿body {
+    background-color: var(--primary-color);
+}
+
+.img-logo {
+    background-image: url("../../Images/nfLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 150px;
+    margin: 0.5rem auto;
+    margin-bottom: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 65vh;
+    margin-left: 9%;
+}
+
+.content-container {
+    width: 50%;
+}
+
+
+.img-admin {
+    background-image: url("../../Images/welcomeAdmin.svg");
+    width: 450px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-position-y: 80px;
+}
+
+.img-employee {
+    background-image: url("../../Images/welcomeEmployee.svg");
+    width: 450px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-position-y: 80px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.welcomeLbl {
+    font-size: 3rem;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+
+btn-container {
+    display: flex;
+}
+
+.welcomeBtn {
+    margin-right: 1rem;
+    width: 28%;
+    padding: 0.7rem 0.5rem;
+    border-radius: 20px;
+    background-color: var(--secondary-text-color);
+    border: none;
+    color: white;
+    font-size: 0.825rem;
+}
+
+
+.masterBtn-container {
+    display: flex;
+    position: absolute;
+    right: 18%;
+    top: 27%;
+    width:140px;
+    justify-content: space-between;
+}
+
+.masterBtn {
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    background-color: var(--secondary-text-color);
+    border: none;
+    color: white;
+    font-size: 0.825rem;
+}

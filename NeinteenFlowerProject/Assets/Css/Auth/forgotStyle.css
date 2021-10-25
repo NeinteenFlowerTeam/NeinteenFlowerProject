@@ -1,0 +1,28 @@
+﻿.container {
+    width: 40%;
+    height: min-content;
+    margin: auto;
+}
+
+.forgot-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2% 5%;
+}
+
+.warning {
+    background-color: #D4EDDA;
+    width: 75%;
+    margin: 0 auto 1.2rem auto;
+    padding: 1rem 1.8rem;
+    text-align: center;
+}
+
+.captcha-label{
+    display:flex;
+}
+
+span {
+    margin-right: 0.5rem;
+}

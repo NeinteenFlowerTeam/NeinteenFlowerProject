@@ -1,0 +1,76 @@
+﻿body {
+    background-color: var(--primary-color);
+    min-height: 100vh;
+}
+
+
+.container {
+    background-color: var(--base-color);
+    display: flex;
+    border-radius: 15px;
+    margin: auto;
+    /* Div Centering*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.img-logo {
+    background-image: url("../Images/nfLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 80px;
+    margin: 0.3rem auto;
+}
+
+.form-header {
+    text-align: center;
+    color: var(--secondary-text-color);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--stroke-color);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.6rem;
+}
+
+.label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.errLabel {
+    font-size: 0.825rem;
+    color: red;
+    margin: 0.3rem 0 0 0.5rem;
+}
+
+.textBox {
+    padding: 0.5rem 0.7rem;
+    border-radius: 10px;
+    border: 2px solid var(--stroke-color);
+}
+
+    .textBox::placeholder {
+        color: var(--hint-text-color);
+    }
+
+
+.form-submitBtn {
+    margin: 0 auto;
+    width: 50%;
+    padding: 0.7rem 0;
+    border-radius: 20px;
+    background-color: var(--secondary-text-color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+}

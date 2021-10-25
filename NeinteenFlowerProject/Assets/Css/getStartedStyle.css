@@ -1,0 +1,74 @@
+﻿body {
+    background-color: var(--primary-color);
+}
+
+.img-logo {
+    background-image: url("../Images/nfLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 150px;
+    margin: 0.5rem auto;
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 65vh;
+    margin-left: 9%;
+}
+
+.content-container {
+    width: 50%;
+}
+
+.welcomeLbl {
+    font-size: 3rem;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.description {
+    width: 75%;
+    line-height: 1.5;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.shopBtn {
+    margin-right: 1rem;
+    width: 20%;
+    padding: 0.7rem 0.5rem;
+    border-radius: 20px;
+    background-color: var(--secondary-text-color);
+    border: none;
+    color: white;
+    font-size: 0.825rem;
+}
+
+.link-icon {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.icon-item {
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+    color: var(--secondary-text-color);
+}
+
+.img-getStarted {
+    background-image: url("../Images/getStarted.png");
+    width: 400px;
+    height: 95%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+}

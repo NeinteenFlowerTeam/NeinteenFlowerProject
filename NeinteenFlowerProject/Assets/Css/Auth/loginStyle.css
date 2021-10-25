@@ -1,0 +1,53 @@
+﻿.container {
+    width: 65%;
+    height: 80%;
+}
+
+.img-section {
+    background-image: url("../../Images/flower-bouquet.jpg");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.login-section{
+    display:flex;
+    flex-direction:column;
+    width: 90%;
+    margin: 2% 5%;
+}
+
+.remember-forgot-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+/*    .remember-forgot-container .remember {
+        display: flex;
+        justify-content: space-between;
+        background-color: blueviolet;
+        align-items: center;
+        width: 5rem;
+    }*/
+
+.regis-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.825rem;
+    margin-top: 1rem;
+}
+.regis-container span{
+    margin-right: 0.4rem;
+}
+
+.regis-link {
+    color: var(--secondary-text-color);
+}

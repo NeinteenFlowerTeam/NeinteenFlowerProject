@@ -1,0 +1,52 @@
+﻿:root {
+    /*========== Colors ==========*/
+    --primary-color: #D6DFCD;
+    --secondary-color: #7A5B4A;
+    --base-color: #FAF8F6;
+    --primary-text-color: #323232;
+    --secondary-text-color: #7A5B4A;
+    --hint-text-color: #969696;
+    --stroke-color: #C7D3BB;
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+    --body-font-size: 1rem;
+
+    /*========== Margenes ==========*/
+
+    /*========== z index ==========*/
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/*==================== BASE ====================*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    color: var(--primary-text-color);
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
