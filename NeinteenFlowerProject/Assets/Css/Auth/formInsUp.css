@@ -1,0 +1,94 @@
+﻿h3 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form {
+    margin: 3rem 0 1rem 3rem;
+    width: 30%;
+}
+
+    .form div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.7rem;
+    }
+
+        .form div .radio{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+            .form div .radio .gender {
+                margin-right: 10px;
+            }
+
+.img-insertFlower {
+    background-image: url("../../Images/insertFlower.svg");
+    width: 450px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-position-y: 80px;
+}
+
+.img-updateFlower {
+    background-image: url("../../Images/updateFlower.svg");
+    width: 450px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-position-y: 80px;
+}
+
+.img-insertMember {
+    background-image: url("../../Images/insertMember.svg");
+    width: 450px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-position-y: 80px;
+}
+
+.img-updateMember {
+    background-image: url("../../Images/updateMember.svg");
+    width: 450px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-position-y: 80px;
+}
+
+.img-insertEmployee {
+    background-image: url("../../Images/insertEmployee.svg");
+    width: 450px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-position-y: 80px;
+}
+
+.img-updateEmployee {
+    background-image: url("../../Images/updateEmployee.svg");
+    width: 450px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-position-y: 80px;
+}

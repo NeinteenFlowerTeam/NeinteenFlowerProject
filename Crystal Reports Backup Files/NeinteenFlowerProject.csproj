@@ -43,10 +43,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -1213,6 +1221,13 @@
     <Content Include="aspnet_client\system_web\4_0_30319\crystalreportviewers13\prompting\js\promptengine_strings_zh_TW.js" />
     <Content Include="aspnet_client\system_web\4_0_30319\crystalreportviewers13\urlreporting\activexviewer.js" />
     <Content Include="aspnet_client\system_web\4_0_30319\crystalreportviewers13\urlreporting\appletviewer.js" />
+    <Content Include="Assets\Css\Auth\forgotStyle.css" />
+    <Content Include="Assets\Css\formStyleSheet.css" />
+    <Content Include="Assets\Css\Auth\loginStyle.css" />
+    <Content Include="Assets\Css\Auth\registerStyle.css" />
+    <Content Include="Assets\Css\getStartedStyle.css" />
+    <Content Include="Assets\Css\Home\homeStyleSheet.css" />
+    <Content Include="Assets\Css\styleSheet.css" />
     <Content Include="Model\NFModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>NFModel.Context.cs</LastGenOutput>
@@ -1233,6 +1248,7 @@
     <Content Include="View\Employee\Home.aspx" />
     <Content Include="View\Guest\ForgotPassword.aspx" />
     <Content Include="View\Employee\insertFlower.aspx" />
+    <Content Include="View\Guest\GetStarted.aspx" />
     <Content Include="View\Guest\Login.aspx" />
     <Content Include="View\Employee\manageFlower.aspx" />
     <Content Include="View\Guest\Register.aspx" />
@@ -1387,6 +1403,13 @@
     <Compile Include="View\Employee\insertFlower.aspx.designer.cs">
       <DependentUpon>insertFlower.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Guest\GetStarted.aspx.cs">
+      <DependentUpon>GetStarted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Guest\GetStarted.aspx.designer.cs">
+      <DependentUpon>GetStarted.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\Guest\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1477,7 +1500,7 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\" />
+    <Folder Include="Assets\Images\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Report\FlowerReport.rpt">

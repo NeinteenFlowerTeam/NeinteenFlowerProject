@@ -50,4 +50,5 @@
 
 .regis-link {
     color: var(--secondary-text-color);
+    cursor: pointer;
 }

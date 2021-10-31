@@ -70,6 +70,7 @@ btn-container {
     border: none;
     color: white;
     font-size: 0.825rem;
+    cursor: pointer;
 }
 
 
