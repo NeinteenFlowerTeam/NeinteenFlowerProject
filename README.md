@@ -4,22 +4,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="Assets/Images/nfLogo.png" alt="Logo" width="80" height="80">
+    <img src="NeinteenFlowerProject/Assets/Images/nfLogo.png" alt="Logo" width="180" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Neinteen Flower</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    A CRUD website using ASP.NET and Domain Driven Design principle.  
   </p>
 </div>
 
@@ -55,19 +46,44 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+![getStarted](NeinteenFlowerProject/Assets/ReadMeIMG/getStarted.jpg?raw=true "Title")
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+NeinteenFlower is a newly established flower shop in Bluejack Land. To start its business, it needs to create a website for their shop. In that website, people can find information about the flowers which NeinteenFlower sells and buy it. This website also allows employees to manage its users and flowers
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+The layers:
+-	View
+This layer, or Presentation Layer, is responsible for showing information to the user and interpreting the user's commands. This layer is the home for all user interfaces in the project.
+-	Controller
+This layer is responsible to validate all input from the view layer. It also responsible for delegating requests from the user to the lower layer for further processing.
+-	Handler
+This layer is responsible to handle all business logic required in the application. It will delegates the task to query from the database, including select, insert, update and delete, to the repository layer. Please notes that there can be a single handler that accesses multiple repository.  
+-	Repository
+Repository layer responsible for giving access to the database and model layer via its public interfaces to acquiring references to preexisting domain objects. It provides methods to manipulate the object, such as add and delete, which will encapsulate the actual manipulation operation of data in the data store (or database). Repository also provides methods that select objects based on some criteria and return fully instantiated objects or collection of objects whose attribute meets those criteria.
+-	Factory
+You need to encapsulate all complex object creation in this layer. For example, when the client needs to create an aggregate object (an object that holds a reference to another object), the object factory must provide an interface for creating these objects. It is important to notes that an object returned by the factory must in a consistent state.
+-	Model
+The model layer is responsible for representing concepts in the business or information about the business situation.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+There are three types of user's roles in this website: Administrator, Member, Employee, and Guest (non-logged in user). Below are the minimum pages you need to create for each role:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+- Administrator
+    - Manage Member
+    - Insert Member
+    - Update Member
+    - Manage Employee
+    - Insert Employee
+	Update Employee
+-	Member
+	Pre Order
+	View Transaction History
+-	Employee
+	Manage Flower
+	Insert Flower
+	Update Flower
+-	Guest
+	Login
+	Register
+	Forgot Password
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
