@@ -1227,6 +1227,7 @@
     <Content Include="Assets\Css\Auth\loginStyle.css" />
     <Content Include="Assets\Css\Auth\registerStyle.css" />
     <Content Include="Assets\Css\getStartedStyle.css" />
+    <Content Include="Assets\Css\HomeMember.css" />
     <Content Include="Assets\Css\Home\homeStyleSheet.css" />
     <Content Include="Assets\Css\styleSheet.css" />
     <Content Include="Model\NFModel.Context.tt">

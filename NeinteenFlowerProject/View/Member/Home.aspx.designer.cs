@@ -24,15 +24,6 @@ namespace NeinteenFlowerProject.View.Member
         protected global::System.Web.UI.WebControls.Label WelcomeLbl;
 
         /// <summary>
-        /// gvItem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvItem;
-
-        /// <summary>
         /// viewTransactionBtn control.
         /// </summary>
         /// <remarks>
@@ -40,5 +31,14 @@ namespace NeinteenFlowerProject.View.Member
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button viewTransactionBtn;
+
+        /// <summary>
+        /// gvItem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvItem;
     }
 }

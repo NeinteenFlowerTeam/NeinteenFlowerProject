@@ -1,16 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Master.Master" AutoEventWireup="true" CodeBehind="manageFlower.aspx.cs" Inherits="NeinteenFlowerProject.View.manageFlower" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="../../Assets/Css/styleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="../../Assets/Css/HomeMember.css" rel="stylesheet" type="text/css" />
+    <link href="../../Assets/Css/Home/homeStyleSheet.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div>
-            <h3>Manage Flower</h3>
+    <div class="img-logo"></div>
+
+    <div class="table-container">
+        <p>Manage Flower</p>
+        
+        <div class="inline-text">
+            <p>Flower List</p>
+
+            <div class="btn-container">
+                <asp:HyperLink ID="insertHyperLink" runat="server" NavigateUrl="~/View/Employee/insertFlower.aspx" CssClass="transactionBtn">Insert Item</asp:HyperLink>
+            </div>
         </div>
-        <div>
-            <asp:HyperLink ID="insertHyperLink" runat="server" NavigateUrl="~/View/Employee/insertFlower.aspx" >Insert Item</asp:HyperLink>
-        </div>
-    <br />
-        <div>
-            <asp:GridView ID="gvItem" runat="server" AutoGenerateColumns="False" OnRowEditing ="gvItem_RowEditing" OnRowDeleting="gvItem_RowDeleting">
+
+        <div class="table">
+            <asp:GridView ID="gvItem" runat="server" AutoGenerateColumns="False" OnRowEditing ="gvItem_RowEditing" OnRowDeleting="gvItem_RowDeleting" CssClass="myGridView">
                 <Columns>
                     <asp:BoundField DataField="FlowerId" HeaderText="Flower Id" />
                     <asp:BoundField DataField="FlowerName" HeaderText="Flower Name" />
@@ -24,4 +33,6 @@
                
             </asp:GridView>
         </div>
+    </div>
+
 </asp:Content>

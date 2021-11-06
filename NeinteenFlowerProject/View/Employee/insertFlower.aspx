@@ -7,7 +7,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="img-logo"></div>
-    <h3>Insert Flower</h3>
+    <p>Insert Flower</p>
     <div class="container-form">
         <div class="form">
             <div>

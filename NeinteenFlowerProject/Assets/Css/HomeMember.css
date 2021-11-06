@@ -1,0 +1,62 @@
+﻿.table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
+}
+
+.home-member-welcome-lbl {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    width: 40%;
+    text-align: center;
+}
+
+.inline-text {
+    display:flex;
+    flex-direction: row;
+    margin-top:1rem;
+    width:100%;
+    margin-left:15%;
+}
+
+.inline-text p {
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.transactionBtn {
+    margin-right: 1rem;
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+    border-radius: 20px;
+    background-color: var(--secondary-text-color);
+    border: none;
+    color: white;
+    font-size: 0.825rem;
+    cursor: pointer;
+}
+
+.table {
+    text-align: center;
+}
+
+table.myGridView th {
+    background-color: var(--secondary-text-color);
+    padding:5px;
+    color: white;
+}
+
+table.myGridView td {
+    padding: 5px;
+}
+
+.editBtn {
+    margin-left:10px;
+}
+
+p {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
